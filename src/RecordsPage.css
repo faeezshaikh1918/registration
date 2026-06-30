@@ -1,0 +1,138 @@
+.table-wrap {
+  width: 100%;
+  max-width: 980px;
+  background: var(--paper);
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+  overflow-x: auto;
+}
+
+.ledger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  min-width: 720px;
+}
+
+.ledger-table thead th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  padding: 14px 16px;
+  border-bottom: 2px solid rgba(22,32,29,0.12);
+}
+
+.ledger-table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(22,32,29,0.08);
+  color: var(--ink);
+  vertical-align: middle;
+}
+
+.ledger-table tbody tr:hover {
+  background: rgba(47,111,98,0.05);
+}
+
+.ledger-table tbody tr.row-editing {
+  background: rgba(192,138,62,0.08);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+}
+
+.col-actions {
+  white-space: nowrap;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.confirm-group {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.btn-mini {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12.5px;
+  padding: 7px 13px;
+  border-radius: 7px;
+  border: none;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.btn-mini:active { transform: scale(0.96); }
+
+.btn-mini-edit {
+  background: rgba(47,111,98,0.12);
+  color: var(--teal);
+}
+.btn-mini-edit:hover { background: rgba(47,111,98,0.2); }
+
+.btn-mini-delete {
+  background: rgba(179,66,47,0.12);
+  color: var(--error);
+}
+.btn-mini-delete:hover { background: rgba(179,66,47,0.2); }
+
+.btn-mini-save {
+  background: var(--teal);
+  color: var(--paper);
+}
+.btn-mini-save:hover { background: var(--teal-light); }
+
+.btn-mini-cancel {
+  background: rgba(22,32,29,0.08);
+  color: var(--ink);
+}
+.btn-mini-cancel:hover { background: rgba(22,32,29,0.16); }
+
+.cell-input {
+  width: 100%;
+  min-width: 70px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 7px 9px;
+  border-radius: 6px;
+  border: 1.5px solid rgba(22,32,29,0.2);
+  background: #fff;
+  color: var(--ink);
+}
+
+.cell-input:focus {
+  outline: none;
+  border-color: var(--teal-light);
+  box-shadow: 0 0 0 3px rgba(76,148,132,0.18);
+}
+
+.cell-input-error {
+  border-color: var(--error);
+  background: var(--error-bg);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.empty-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 6px;
+}
+
+.empty-sub {
+  color: rgba(22,32,29,0.55);
+  margin: 0;
+  font-size: 14.5px;
+}

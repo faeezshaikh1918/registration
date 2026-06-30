@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+  --ink: #16201d;
+  --paper: #f6f1e4;
+  --paper-soft: #efe7d4;
+  --night: #0d1a18;
+  --night-soft: #15302b;
+  --brass: #c08a3e;
+  --brass-light: #e0b873;
+  --teal: #2f6f62;
+  --teal-light: #4c9484;
+  --error: #b3422f;
+  --error-bg: #fbe9e4;
+  --success: #2f6f62;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 10%, rgba(192,138,62,0.12), transparent 45%),
+    radial-gradient(circle at 85% 90%, rgba(76,148,132,0.16), transparent 50%),
+    var(--night);
+  font-family: var(--font-body);
+  color: var(--ink);
+  min-height: 100%;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--brass-light);
+  color: var(--night);
+}
+
+:focus-visible {
+  outline: 3px solid var(--brass-light);
+  outline-offset: 2px;
+}
